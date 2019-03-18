@@ -48,7 +48,7 @@ class Simon
   end
 
   def add_random_color
-    @seq << COLORS.sample
+    @seq << COLORS.sample #change to sample the same color in one seq
   end
 
   def round_success_message
