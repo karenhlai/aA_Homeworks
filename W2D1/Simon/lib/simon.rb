@@ -32,12 +32,7 @@ class Simon
   def require_sequence #working on this spec
     puts "Repeat a color: "
     color_input = gets.chomp.downcase
-
-    if !seq.include?(color_input)
-      @game_over = true
-    else 
-      @game_over = false
-    end
+    @game_over = true if !seq.include?(color_input)
   end
 
   def add_random_color
