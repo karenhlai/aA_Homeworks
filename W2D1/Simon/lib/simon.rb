@@ -10,7 +10,10 @@ class Simon
   end
 
   def play
-    take_turn until game_over == true
+    until game_over == true
+      take_turn
+      system('clear')
+    end
     game_over_message
     reset_game
   end
