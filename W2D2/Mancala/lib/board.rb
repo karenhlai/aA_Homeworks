@@ -1,4 +1,4 @@
-require_relative 'mancala.rb'
+# require_relative 'mancala.rb'
 
 class Board
   attr_accessor :cups
