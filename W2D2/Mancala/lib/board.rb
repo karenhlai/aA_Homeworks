@@ -56,6 +56,5 @@ class Board
 
   def winner
     return :draw if self.cups[6].empty? == self.cups[13].empty?
-
   end
 end
