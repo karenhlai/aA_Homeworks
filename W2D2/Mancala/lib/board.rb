@@ -51,7 +51,7 @@ class Board
 
   def one_side_empty?
     return true if self.cups[6].empty? || self.cups[13].empty?
-    @cups.each.none? { |cup| cup.empty? }
+    # @cups.each.none? { |cup| cup.empty? }
   end
 
   def winner
