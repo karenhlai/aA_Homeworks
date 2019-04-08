@@ -1,0 +1,35 @@
+- Know differences between Inline, Internal, External
+- Responsive Design 
+    @media (min-width: 480px) and (max-width: 980px) { (user , for OR)
+    /* Selectors and their styles to apply when 480px <= screen_width <= 980px,
+        perhaps a good range for tablets */
+    }
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+Specificity and Selectors 
+    - color of code will apply to whatever ancestor is closest
+        universal *, tag, class, ID, inline/!important
+    -display
+        block, inline, inline-block
+    -float, clearfix
+    -grid, flexbox (floated grid)
+    -position of elements
+        static(doesn't budge), relative(in flow, changes accoriding to their orig positoin), 
+        fixed(sticky nav bars), absolute(drop down bars, close ancestor)
+
+Learning goals:
+    How to use the browser inspector for CSS/HTML
+    Semantic HTML
+    Classes/ids
+    CSS selector precedence
+    Default browser styles
+    Box model (margin, border, padding, width/height)
+    Display block and inline
+    Document flow
+    Floating and clearing
+    Pseudo content (:after/:before)
+    Clearfix (use .group)
+    Positioning (static, relative, absolute, fixed)
+    Pseudo classes (:hover/:active/:focus)
+    Box sizing (change the way the box model is calculated)
