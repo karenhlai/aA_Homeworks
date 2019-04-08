@@ -5,14 +5,14 @@ class User < ApplicationRecord
     # before_validation :ensure_session_token
     after_initialize :ensure_session_token
 
-    def self.find_by_credentials(username, password)
+    def self.find_by_credentials(username, password) 
         #returns the user that matches
         user = User.find_by(username: username)
         
-        if user && user.password.is_password?(password)
-            return user
+        if user && user.password.is_password?(password) #if user is found, and password is encrypted
+            return user  #found - Woohoo!
         else 
-            nil
+            nil #oh poo...
         end
     end
 
